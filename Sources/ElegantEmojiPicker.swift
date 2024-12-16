@@ -339,8 +339,17 @@ extension ElegantEmojiPicker: UICollectionViewDelegate, UICollectionViewDataSour
     }
     
     public func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let selection = searchResults?[indexPath.row] ?? emojiSections[indexPath.section].emojis[indexPath.row]
-        didSelectEmoji(selection)
+        DispatchQueue.main.async { [weak self] in
+            guard let self else { return }
+            guard let searchResults = self.searchResults, indexPath.row < searchResults.count else {
+                let selection = self.emojiSections[indexPath.section].emojis[indexPath.row]
+                self.didSelectEmoji(selection)
+                return
+            }
+            
+            let selection = searchResults[indexPath.row]
+            self.didSelectEmoji(selection)
+        }
     }
     
     public func scrollViewDidScroll(_ scrollView: UIScrollView) {
