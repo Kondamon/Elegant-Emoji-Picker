@@ -22,6 +22,7 @@
 		3713370E29BBF51E00952B29 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3713371329BBF51E00952B29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		379D484C29C2938F00A96710 /* Demo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Demo.entitlements; sourceTree = "<group>"; };
+		AA2E938D2D10754D00817805 /* Elegant-Emoji-Picker */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = "Elegant-Emoji-Picker"; path = ../..; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +62,7 @@
 				3713370929BBF51C00952B29 /* ViewController.swift */,
 				3713370E29BBF51E00952B29 /* Assets.xcassets */,
 				3713371329BBF51E00952B29 /* Info.plist */,
+				AA2E938D2D10754D00817805 /* Elegant-Emoji-Picker */,
 			);
 			path = Demo;
 			sourceTree = "<group>";
@@ -271,7 +273,7 @@
 				CODE_SIGN_ENTITLEMENTS = Demo/Demo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = AYPPAXMRMG;
+				DEVELOPMENT_TEAM = 7N68H4MMT9;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Demo/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Demo;
@@ -305,7 +307,7 @@
 				CODE_SIGN_ENTITLEMENTS = Demo/Demo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = AYPPAXMRMG;
+				DEVELOPMENT_TEAM = 7N68H4MMT9;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Demo/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Demo;
